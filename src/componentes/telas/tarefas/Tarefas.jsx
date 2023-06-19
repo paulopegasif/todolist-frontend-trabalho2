@@ -10,14 +10,14 @@ function Tarefas() {
     return (
         <div className="p-3">
             <h1>Tarefas: </h1>
-            <div className="adminArea">
+            <div >
                 <Alerta alerta={alerta} />
                 <button type="button" className="btn btn-primary mb-3" data-bs-toggle="modal"
                     data-bs-target="#modalEdicao"
                     onClick={
                         () => {
                             setObjeto({
-                                codigo: '',
+                                codigo: 0,
                                 titulo: '',
                                 descricao: '',
                                 dataconclusao: '',

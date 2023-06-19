@@ -21,7 +21,7 @@ function Form() {
                 label="Código"
                 tipo="text"
                 name="codigo"
-                value={objeto && objeto.codigo}
+                value={objeto.codigo}
                 onchange={handleChange}
                 readonly={true}
                 requerido={false} />
@@ -32,7 +32,7 @@ function Form() {
                 label="Título"
                 tipo="text"
                 name="titulo"
-                value={objeto && objeto.titulo}
+                value={objeto.titulo}
                 onchange={handleChange}
                 readonly={false}
                 requerido={true}
@@ -46,7 +46,7 @@ function Form() {
                 label="Descrição"
                 tipo="text"
                 name="descricao"
-                value={objeto && objeto.descricao}
+                value={objeto.descricao}
                 onchange={handleChange}
                 readonly={false}
                 requerido={true}
@@ -60,7 +60,7 @@ function Form() {
                 label="Data Conclusão"
                 tipo="date"
                 name="dataconclusao"
-                value={objeto && objeto.dataconclusao}
+                value={objeto.dataconclusao}
                 onchange={handleChange}
                 readonly={false}
                 requerido={false}
@@ -76,7 +76,7 @@ function Form() {
                 tipo="radio"
                 name="prioridade"
                 value="Baixa"
-                checked={objeto && objeto.prioridade === "Baixa"}
+                checked={objeto.prioridade === "Baixa"}
                 onchange={handleChange}
                 readonly={false}
                 requerido={true}
@@ -88,7 +88,7 @@ function Form() {
                 tipo="radio"
                 name="prioridade"
                 value="Normal"
-                checked={objeto && objeto.prioridade === "Normal"}
+                checked={objeto.prioridade === "Normal"}
                 onchange={handleChange}
                 readonly={false}
                 requerido={true}
@@ -100,7 +100,7 @@ function Form() {
                 tipo="radio"
                 name="prioridade"
                 value="Alta"
-                checked={objeto && objeto.prioridade === "Alta"}
+                checked={objeto.prioridade === "Alta"}
                 onchange={handleChange}
                 readonly={false}
                 requerido={true}

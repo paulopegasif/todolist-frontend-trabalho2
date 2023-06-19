@@ -5,12 +5,12 @@ import Alerta from '../../comuns/Alerta'
 function Tabela() {
 
     const { alerta, setAlerta, listaObjetos, remover,
-        setEditar, setObjeto, recuperar, recuperarEquipamentos }
+        setEditar, setObjeto, recuperar }
         = useContext(CategoriaContext);
 
     return (
         <div style={{ padding: '20px' }}>
-            <h1>Salas</h1>
+            <h1>Categorias:</h1>
             <Alerta alerta={alerta} />
             <button type="button" className="btn btn-primary"
                 data-bs-toggle="modal"
